@@ -1,15 +1,41 @@
 body {
-  background-color: #f0f0f2;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f0f0f2;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header {
-  text-align: center;
-  font-size: 24px;
+nav {
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
 }
 
-div .main {
-  width: 75%;
+nav ul a:visited, nav ul a:link {
+
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+    background: white;
+    line-height: 50px;
+}
+
+table, th, td {
+    border: 1px solid gray;
+}
+
+div.main {
+    width: 75%;
+    margin: 5em;
+}
+
+h1 {
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: #38488f;
+    text-decoration: none;
 }
