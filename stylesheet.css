@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f2;
+    background-color: #F0F0F2;
     margin: 0;
     padding: 0;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -16,14 +16,14 @@ nav ul a:visited, nav ul a:link {
 }
 
 nav ul li:hover {
-    background-color: #224aad;
+    background-color: #224AAD;
     animation-name: lighter;
     animation-duration: .2s;
 }
 
 @keyframes lighter {
-    from {background-color: #1c3f95;}
-    to {background-color: #224aad;}
+    from {background-color: #1C3F95;}
+    to {background-color: #224AAD;}
 }
 
 nav ul li {
@@ -40,7 +40,6 @@ table, th, td {
 div.main {
     border-top: 1px solid #E0E0E0;
     border-bottom: 1px solid #E0E0E0;
-    width: 75%;
     margin: 10px 5em 10px 5em;
 }
 
