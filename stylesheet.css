@@ -12,14 +12,25 @@ nav {
 }
 
 nav ul a:visited, nav ul a:link {
-
+    color: white;
 }
 
 nav ul li {
     display: inline;
     padding: 10px;
-    background: white;
+    background: #1c3f95;
     line-height: 50px;
+}
+
+@keyframes lighter {
+    from {background-color: #1c3f95;}
+    to {background-color: #224aad;}
+}
+
+nav ul li:hover {
+    background-color: #224aad;
+    animation-name: lighter;
+    animation-duration: .2s;
 }
 
 table, th, td {
@@ -27,8 +38,20 @@ table, th, td {
 }
 
 div.main {
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
     width: 75%;
-    margin: 5em;
+    margin-left: 3%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.center {
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    margin: auto;
+    margin-top: 10px;
+    width: 42%;
+    text-align: center;
 }
 
 h1 {
