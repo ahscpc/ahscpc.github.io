@@ -38,19 +38,20 @@ table, th, td {
 }
 
 div.main {
-    border-top: 1px solid #E0E0E0 ;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
     width: 75%;
     margin-left: 3%;
     margin-top: 10px;
-
+    margin-bottom: 10px;
 }
 div.center {
-    border-top: 1px solid #E0E0E0 ;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
     margin: auto;
     margin-top: 10px;
     width: 42%;
     text-align: center;
-    
 }
 
 h1 {
