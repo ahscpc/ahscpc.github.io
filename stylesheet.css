@@ -15,11 +15,10 @@ nav ul a:visited, nav ul a:link {
     color: white;
 }
 
-nav ul li {
-    display: inline;
-    padding: 10px;
-    background: #1c3f95;
-    line-height: 50px;
+nav ul li:hover {
+    background-color: #224aad;
+    animation-name: lighter;
+    animation-duration: .2s;
 }
 
 @keyframes lighter {
@@ -27,10 +26,11 @@ nav ul li {
     to {background-color: #224aad;}
 }
 
-nav ul li:hover {
-    background-color: #224aad;
-    animation-name: lighter;
-    animation-duration: .2s;
+nav ul li {
+    display: inline;
+    padding: 10px;
+    background: #1c3f95;
+    line-height: 50px;
 }
 
 table, th, td {
@@ -41,16 +41,14 @@ div.main {
     border-top: 1px solid #E0E0E0;
     border-bottom: 1px solid #E0E0E0;
     width: 75%;
-    margin-left: 3%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 5em 10px 5em;
 }
-div.center {
-    border-top: 1px solid #E0E0E0;
-    border-bottom: 1px solid #E0E0E0;
-    margin: auto;
-    margin-top: 10px;
-    width: 42%;
+
+div.logo {
+    margin-top: 50px;
+}
+
+#center {
     text-align: center;
 }
 
