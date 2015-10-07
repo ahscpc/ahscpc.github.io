@@ -39,11 +39,16 @@ div.main {
 
 div.langcell {
     border-top: 1px solid #E0E0E0;
-    border-bottom: 1px solid #E0E0E0;
+
 }
 
 div.logo {
     margin-top: 50px;
+}
+
+th#th1{
+    background-color: #224AAD;
+    color: #E0E0E0;
 }
 
 #center {
