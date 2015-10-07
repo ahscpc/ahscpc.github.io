@@ -19,6 +19,7 @@ body {
     background: rgba(34, 74, 173, .97);
 }
 
+/* The navbar */
 nav {
     font-size: 20px;
     text-align: center;
@@ -41,35 +42,42 @@ nav ul li {
     transition: .25s background-color;
 }
 
+/* Styling for every table */
 table, th, td {
     border: 1px solid gray;
 }
 
-div.main {
+/* Main content of every page */
+.main {
     border-top: 1px solid #E0E0E0;
     border-bottom: 1px solid #E0E0E0;
     margin: 10px 5em 10px 5em;
 }
 
-div.langcell {
+.langcell {
     border-top: 1px solid #E0E0E0;
 
 }
 
-div.logo {
+.logo {
     margin-top: 50px;
 }
 
-th#th01{
+.langtable th {
     background-color: #224AAD;
     color: #fff;
 }
 
+.fadein {
+    animation: appear 2.3s;
+}
+
+/* Provide a way to center elements */
 #center {
-    animation:appear 2.3s;
     text-align: center;
 }
 
+/* Appear animation */
 @-webkit-keyframes appear {
     from {opacity: 0;}
     from {margin-top: 50px}
@@ -77,11 +85,12 @@ th#th01{
     to {opacity: 1;}
 } 
 
-
+/* Center all h1s */
 h1 {
     text-align: center;
 }
 
+/* Make links look better */
 a:link, a:visited {
     color: #38488f;
     text-decoration: none;
