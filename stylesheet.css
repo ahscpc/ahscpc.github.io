@@ -37,6 +37,11 @@ div.main {
     margin: 10px 5em 10px 5em;
 }
 
+div.langcell {
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
 div.logo {
     margin-top: 50px;
 }
