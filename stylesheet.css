@@ -1,10 +1,25 @@
 /* Global properties */
-body {
+html, body {
     background-color: #FFFFFF;
     margin: 0;
     padding: 0;
     color: #333333;
+	width: 100%;
     font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+}
+
+body::-webkit-scrollbar {
+	width:15px; /* manage scrollbar width here */
+}
+body::-webkit-scrollbar * {
+	background:transparent; /* manage scrollbar background color here */
+}
+body::-webkit-scrollbar-thumb {
+	background:rgba(0,0,0,0.1) !important; /* manage scrollbar thumb background color here */
+}
+
+html {
+	overflow-y:scroll; /*bprevent shifting of content to accommodate the scrollbar */
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -24,7 +39,7 @@ body {
 nav {
     font-size: 20px;
     text-align: center;
-    height: 50px;
+    height: 35px;
 }
 
 /* Make the links white */
@@ -42,7 +57,7 @@ nav ul li {
     display: inline;
     padding: 10px;
     background: #1C3F95;
-    line-height: 50px;
+    line-height: 0px;
     transition: .25s background-color;
 }
 
@@ -76,11 +91,14 @@ table, th, td {
 
 /* Class for the appear animation */
 .fadein {
+    -webkit-animation: appear 2.3s;
+    -moz-animation: appear 2.3s;
+    -o-animation: appear 2.3s;
     animation: appear 2.3s;
 }
 
 /* Provide a way to center elements */
-#center {
+.center {
     text-align: center;
 }
 
@@ -91,6 +109,31 @@ table, th, td {
     to {margin-top: 10px}
     to {opacity: 1;}
 } 
+
+/* Appear animation */
+@keyframes appear {
+    from {opacity: 0;}
+    from {margin-top: 50px}
+    to {margin-top: 10px}
+    to {opacity: 1;}
+} 
+
+/* Appear animation */
+@-MOZ-keyframes appear {
+    from {opacity: 0;}
+    from {margin-top: 50px}
+    to {margin-top: 10px}
+    to {opacity: 1;}
+} 
+
+/* Appear animation */
+@-0-keyframes appear {
+    from {opacity: 0;}
+    from {margin-top: 50px}
+    to {margin-top: 10px}
+    to {opacity: 1;}
+} 
+
 
 /* Center all h1s */
 h1 {
