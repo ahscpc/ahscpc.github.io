@@ -76,6 +76,9 @@ table, th, td {
 
 /* Class for the appear animation */
 .fadein {
+    -webkit-animation: appear 2.3s;
+    -moz-animation: appear 2.3s;
+    -o-animation: appear 2.3s;
     animation: appear 2.3s;
 }
 
@@ -91,6 +94,31 @@ table, th, td {
     to {margin-top: 10px}
     to {opacity: 1;}
 } 
+
+/* Appear animation */
+@keyframes appear {
+    from {opacity: 0;}
+    from {margin-top: 50px}
+    to {margin-top: 10px}
+    to {opacity: 1;}
+} 
+
+/* Appear animation */
+@-MOZ-keyframes appear {
+    from {opacity: 0;}
+    from {margin-top: 50px}
+    to {margin-top: 10px}
+    to {opacity: 1;}
+} 
+
+/* Appear animation */
+@-0-keyframes appear {
+    from {opacity: 0;}
+    from {margin-top: 50px}
+    to {margin-top: 10px}
+    to {opacity: 1;}
+} 
+
 
 /* Center all h1s */
 h1 {
