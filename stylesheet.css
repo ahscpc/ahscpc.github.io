@@ -1,18 +1,19 @@
+/* Global properties */
 body {
-    background-color: #fff;
+    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #333333;
     font-family: "Lucida Grande", Arial, Verdana, sans-serif;
 }
 
 ::-moz-selection { /* Code for Firefox */
-    color: #fff;
+    color: #FFFFFF;
     background: #224AAD;
 }
 
 ::selection {
-    color: #fff;
+    color: #FFFFFF;
     /*
         [IMPORTANT!] Don't change the opacity value.
     */
@@ -26,18 +27,21 @@ nav {
     height: 50px;
 }
 
+/* Make the links white */
 nav ul a:visited, nav ul a:link {
     color: white;
 }
 
+/* Change the color of the nav buttons on hover */
 nav ul li:hover {
     background-color: #224AAD;
 }
 
+/* Properties of the nav buttons */
 nav ul li {
     display: inline;
     padding: 10px;
-    background: #1c3f95;
+    background: #1C3F95;
     line-height: 50px;
     transition: .25s background-color;
 }
@@ -54,20 +58,23 @@ table, th, td {
     margin: 10px 5em 10px 5em;
 }
 
+/* Put a seperator between the language cells so its more readable */
 .langcell {
     border-top: 1px solid #E0E0E0;
-
 }
 
+/* AHS logo displayed on the main page */
 .logo {
     margin-top: 50px;
 }
 
+/* Make the table header blue */
 .langtable th {
     background-color: #224AAD;
-    color: #fff;
+    color: #FFFFFF;
 }
 
+/* Class for the appear animation */
 .fadein {
     animation: appear 2.3s;
 }
@@ -92,6 +99,6 @@ h1 {
 
 /* Make links look better */
 a:link, a:visited {
-    color: #38488f;
+    color: #38488F;
     text-decoration: none;
 }
