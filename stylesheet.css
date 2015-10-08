@@ -8,6 +8,20 @@ html, body {
     font-family: "Lucida Grande", Arial, Verdana, sans-serif;
 }
 
+body::-webkit-scrollbar {
+	width:15px; /* manage scrollbar width here */
+}
+body::-webkit-scrollbar * {
+	background:transparent; /* manage scrollbar background color here */
+}
+body::-webkit-scrollbar-thumb {
+	background:rgba(0,0,0,0.1) !important; /* manage scrollbar thumb background color here */
+}
+
+html {
+	overflow-y:scroll; /*bprevent shifting of content to accommodate the scrollbar */
+}
+
 ::-moz-selection { /* Code for Firefox */
     color: #FFFFFF;
     background: #224AAD;
