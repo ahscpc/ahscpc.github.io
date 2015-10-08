@@ -1,9 +1,10 @@
 /* Global properties */
-body {
+html, body {
     background-color: #FFFFFF;
     margin: 0;
     padding: 0;
     color: #333333;
+	width: 100%;
     font-family: "Lucida Grande", Arial, Verdana, sans-serif;
 }
 
@@ -24,7 +25,7 @@ body {
 nav {
     font-size: 20px;
     text-align: center;
-    height: 50px;
+    height: 35px;
 }
 
 /* Make the links white */
@@ -42,7 +43,7 @@ nav ul li {
     display: inline;
     padding: 10px;
     background: #1C3F95;
-    line-height: 50px;
+    line-height: 0px;
     transition: .25s background-color;
 }
 
@@ -83,7 +84,7 @@ table, th, td {
 }
 
 /* Provide a way to center elements */
-#center {
+.center {
     text-align: center;
 }
 
