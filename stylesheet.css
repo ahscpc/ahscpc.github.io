@@ -26,7 +26,7 @@ body {
 nav {
     font-size: 20px;
     text-align: center;
-    height: 35px;
+    height: 2%;
 }
 
 /* Make the links white */
@@ -119,6 +119,14 @@ table, th, td {
     to {margin-top: 10px}
     to {opacity: 1;}
 } 
+
+/* Appear animation */
+@-ms-keyframes keyarm {
+    from {opacity: 0;}
+    from {margin-top: 50px}
+    to {margin-top: 10px}
+    to {opacity: 1;}
+}
 
 
 /* Center all h1s */
