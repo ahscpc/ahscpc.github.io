@@ -6,20 +6,7 @@ body {
     width: 100%;
     color: #333333;
     font-family: "Lucida Grande", Arial, Verdana, sans-serif;
-    overflow-y: scroll;
-}
-
-::-moz-selection { /* Code for Firefox */
-    color: #FFFFFF;
-    background: #224AAD;
-}
-
-::selection {
-    color: #FFFFFF;
-    /*
-        [IMPORTANT!] Don't change the opacity value.
-    */
-    background: rgba(34, 74, 173, .97);
+    overflow-y: scroll; /* Force displaying a scroll bar */
 }
 
 /* The navbar */
@@ -60,7 +47,7 @@ table, th, td {
 }
 
 /* Put a seperator between the language cells so its more readable */
-.langcell {
+.seperated {
     border-top: 1px solid #E0E0E0;
 }
 
@@ -75,17 +62,32 @@ table, th, td {
     color: #FFFFFF;
 }
 
+/* Center all h1s */
+h1 {
+    text-align: center;
+}
+
+/* Make links look better */
+a:link, a:visited {
+    color: #38488F;
+    text-decoration: none;
+}
+
+/* Provide a way to center elements */
+.center {
+    text-align: center;
+}
+
+/**********************************************/
+/* Put all animation code in the next section */
+/**********************************************/
+
 /* Class for the appear animation */
 .fadein {
     -webkit-animation: appear 2.3s;
     -moz-animation: appear 2.3s;
     -o-animation: appear 2.3s;
     animation: appear 2.3s;
-}
-
-/* Provide a way to center elements */
-.center {
-    text-align: center;
 }
 
 /* Appear animation */
@@ -126,16 +128,4 @@ table, th, td {
     from {margin-top: 50px}
     to {margin-top: 10px}
     to {opacity: 1;}
-}
-
-
-/* Center all h1s */
-h1 {
-    text-align: center;
-}
-
-/* Make links look better */
-a:link, a:visited {
-    color: #38488F;
-    text-decoration: none;
 }
