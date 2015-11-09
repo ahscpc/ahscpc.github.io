@@ -78,6 +78,11 @@ a:link, a:visited {
     text-align: center;
 }
 
+.console {
+    border-color: black;
+    border-radius: 1px;
+}
+
 /**********************************************/
 /* Put all animation code in the next section */
 /**********************************************/
