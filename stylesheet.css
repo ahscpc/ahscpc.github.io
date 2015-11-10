@@ -78,9 +78,21 @@ a:link, a:visited {
     text-align: center;
 }
 
-.console {
-    border-color: black;
-    border-radius: 1px;
+.game {
+    height: 240px;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.game .console {
+    height: 240px;
+    background-color: black;
+    color: limegreen;
+    overflow-y: scroll;
+}
+
+.game .input .textbox {
+    width: 320px;
 }
 
 /**********************************************/
