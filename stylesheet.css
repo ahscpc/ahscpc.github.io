@@ -79,9 +79,10 @@ a:link, a:visited {
 }
 
 .game {
-    height: 240px;
+    height: 259px;
     width: 320px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .game .console {
@@ -89,10 +90,11 @@ a:link, a:visited {
     background-color: black;
     color: limegreen;
     overflow-y: scroll;
+    padding: 4px;
 }
 
 .game .input .textbox {
-    width: 320px;
+    width: 314px;
 }
 
 /**********************************************/
