@@ -98,12 +98,26 @@ var game = {
             } else if (text=="2") {
                 this.die("The wizard was not asking for your opinion. He reduces you to a pile of ash out of rage.");
             }
-        }
+        };
     },
     
     startQuest: function() {
-        this.write("This is as far as we have gotten with this game. If you want it to continue, submit a pull request to ahscpc/ahscpc.github.io on GitHub.");
-        setTimeout(reset, 10000);
+        /* this.write("This is as far as we have gotten with this game. If you want it to continue, submit a pull request to ahscpc/ahscpc.github.io on GitHub.");
+        setTimeout(reset, 10000); */
+        
+        this.write("You start walking in the direction of the castle that has the dagger that the wizard told you to get. Suddenly, bandits come out from below a bridge. A ghost comes out infront of you and offers you a choice of weapons.");
+        this.write("[1] Choose a solid gold sword\n [2] A gun");
+        this.onEnter = function(text) {
+            if (text == "1") {
+                this.sword();
+            } else if (text == "2") {
+                this.die("You get a gun, but it has no ammunition. The bandits club you to death.");
+            }
+        };
+    },
+    
+    sword: function() {
+        
     }
 };
 
